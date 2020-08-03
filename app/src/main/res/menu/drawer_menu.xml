@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_wallet"
+
+            android:title="Wallet" />
+        <item
+            android:id="@+id/nav_govtschemes"
+
+            android:title="Govt Schemes" />
+        <item
+            android:id="@+id/nav_help"
+
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_aboutus"
+
+            android:title="About Us" />
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_notification_setting"
+
+                android:title="Notification" />
+            <item
+                android:id="@+id/nav_app_setting"
+
+                android:title="App Setting" />
+        </menu>
+    </item>
+
+</menu>

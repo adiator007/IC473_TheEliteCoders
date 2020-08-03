@@ -1,0 +1,99 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DistributorKycRegister"
+    android:orientation="vertical"
+
+    android:gravity="center">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/linearLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/shopchoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/newupload"
+            android:text="          Choose Shop Licence" />
+
+        <Button
+            android:id="@+id/shopupload"
+            android:layout_width="wrap_content"
+            android:background="@color/green_500"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Upload" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_pan"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonChoose_pan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/newupload"
+
+            android:text="   Choose Pan Card" />
+
+        <Button
+            android:id="@+id/buttonUploadPan"
+            android:layout_width="wrap_content"
+            android:background="@color/green_500"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Upload" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout_adhar"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonChooseAadhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/newupload"
+            android:text="          Choose Aadhar Card" />
+
+        <Button
+            android:id="@+id/buttonUploadadhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@color/green_500"
+            android:text="Upload" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#B962EF"
+        android:text="Done" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">राशन खाता</string>
+
+
+    <string name="login_menu_item">Log in</string>
+    <string name="logout_menu_item">Log out</string>
+    <string name="welcome_on_signin">Congratulations! you have successfully signed in.</string>
+    <string name="default_nouser_signin">No user signed in currently.</string>
+    <string name="login_failed">Log in cancelled!</string>
+    <string name="login_success">Log in successful.</string>
+    <string name="logout_success">Successfully logged out</string>
+    <string name="logout_failed">Failed to log out</string>
+    <string name="login_unknown_Error">Unknown error while logging in. Please Try again</string>
+    <string name="no_connectivity">There is no internet connection. Please try again</string>
+
+
+    <string name="button_upload">Upload</string>
+    <string name="button_download">Download</string>
+    <string name="delete_file">Delete file</string>
+    <string name="download_in_memory">Download in memory</string>
+    <string name="download_in_file">Download in file</string>
+    <string name="download_via_url">Download via url</string>
+    <string name="upload_shop_license">Upload Shop License</string>
+    <string name="upload_pancard">Upload Pan Card</string>
+    <string name="upload_aadharcard">Upload Aadhar Card</string>
+    <string name="upload_from_stream">Upload from stream</string>
+    <string name="upload_from_file">Upload from file</string>
+    <string name="upload_resume">Resume upload</string>
+    <string name="upload_paused">Upload is paused</string>
+    <string name="metadata_get">Get metadata</string>
+    <string name="metadata_update">Update metadata</string>
+    <string name="loading">Loading…</string>
+
+    <string name="cloud_storage">Cloud Storage</string>
+
+    <string name="navigation_drawer_open">OPEN</string>
+    <string name="navigation_drawer_close">CLOSE</string>
+
+
+    <string name="my_cart">My Cart</string>
+    <string name="delete">DELETE</string>
+    <string name="payment_string">We have sent verification code to your registered mobile number</string>
+
+</resources>

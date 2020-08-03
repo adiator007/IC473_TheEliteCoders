@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+    <View android:layout_height="10dp"
+        android:background="@color/grey_40"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:layout_marginTop="10dp"
+
+        android:paddingTop="10dp">
+        <LinearLayout
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listlinear"
+
+            >
+
+
+            <View android:layout_height="1dp"
+                android:background="@color/orange_400"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/stattext"
+                android:id="@+id/line_below_status"
+                android:layout_margin="5dp"
+
+
+                />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/orderlistPic"
+                android:text="Purchased On:"
+                android:textStyle="bold"
+                android:id="@+id/itemText"
+                android:layout_below="@+id/line_below_status"
+                />
+
+
+            <TextView
+                android:id="@+id/timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:paddingRight="10dp"
+                android:text="2017/8/31 16:43:22"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+            </LinearLayout>
+        <LinearLayout
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Total Amount:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Rs. "
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/green_600"
+
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+
+                android:layout_toRightOf="@+id/orderlistPic"
+                android:layout_below="@+id/itemText"
+                android:text="34 Rs"
+                android:textColor="@color/green_600"
+                android:id="@+id/totalAmount"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distributor:"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="42dp"
+                android:text="distributor"
+                android:id="@+id/shopName"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+            <View android:layout_height="1dp"
+                android:background="@color/grey_40"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/shopName"
+                android:id="@+id/line_above_collect_location"
+                android:layout_margin="5dp"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:gravity="left">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location:"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shopAddress"
+                android:layout_marginLeft="55dp"
+                android:text="location"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

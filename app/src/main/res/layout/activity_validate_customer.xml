@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/amber_500"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout android:orientation="vertical" android:background="@color/amber_500" android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/spacing_xlarge" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/quantum_black_100" android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Validation" />
+            <TextView android:textColor="@color/quantum_black_100" android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:gravity="center" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_medium" android:text="@string/payment_string" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xlarge" android:layout_marginBottom="@dimen/spacing_large">
+            <EditText android:id="@+id/verification_code_country_code" android:enabled="false" android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:textStyle="bold" android:textColor="@color/grey_60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+91" android:maxLines="1" android:singleLine="true" android:inputType="phone" />
+            <View android:layout_width="@dimen/spacing_middle" android:layout_height="0.0dip" />
+            <EditText android:id="@+id/verification_code_phone_number" android:enabled="false" android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:textStyle="bold" android:textColor="@color/grey_60" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="9767 0587 7834" android:hint="Phone Number" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:inputType="phone">
+                <requestFocus />
+            </EditText>
+            <ImageButton android:background="@android:color/transparent" android:layout_width="@dimen/spacing_xmlarge" android:layout_height="@dimen/spacing_xmlarge" android:tint="@color/green_400" app:srcCompat="@drawable/ic_check_circle" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_medium" android:text="Please input code below" />
+        <View android:layout_width="0.0dip" android:layout_height="@dimen/spacing_large" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:layout_marginRight="@dimen/spacing_large">
+
+
+            <com.google.android.material.textfield.TextInputLayout android:background="@color/grey_3" android:layout_width="fill_parent" android:layout_height="@dimen/spacing_xmlarge" android:layout_marginTop="@dimen/spacing_middle" app:hintEnabled="false">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittextcode"
+                    android:textColorHint="@color/grey_20" android:background="@drawable/edit_text_round_bg_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="." />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <TextView  android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textColor="@color/grey_60" android:gravity="center" android:id="@+id/tv_countdown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_medium" android:text="02:00" />
+
+        <Button android:id="@+id/verification_code_btn_verify"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/black" android:background="@drawable/btn_rounded_yellow" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="VERIFY" />
+        <Button
+            android:id="@+id/resend_otp_btn"
+            android:visibility="gone"
+            android:enabled="false"
+            android:textColor="@color/grey_40" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RESEND CODE" style="@style/Widget.AppCompat.Button.Borderless" />
+        <View android:layout_width="0.0dip" android:layout_height="@dimen/spacing_middle" />
+    </LinearLayout>
+</LinearLayout>

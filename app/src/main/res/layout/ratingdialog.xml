@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@+id/a"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="Rate Distributor"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+<LinearLayout
+    android:layout_gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25sp"
+
+    android:textStyle="bold"
+    android:text="Rate: "/>
+        <RatingBar
+            style = "?android:attr/ratingBarStyleIndicator"
+            android:clickable="true"
+            android:isIndicator="false"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating">
+        </RatingBar>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+
+            android:layout_gravity="center"
+            android:id="@+id/reviewtext"
+            android:layout_width="250dp"
+            android:hint="Enter your feedback"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:textSize="20sp"
+                android:text="OK"
+                android:textColor="#ffffffff" />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red_A200"
+                android:textSize="20sp"
+                android:text="Cancel"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ffffffff" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

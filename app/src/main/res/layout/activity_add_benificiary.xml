@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <ImageButton android:id="@+id/bt_close" android:background="?selectableItemBackgroundBorderless" android:layout_width="?actionBarSize" android:layout_height="?actionBarSize" android:tint="@color/grey_60" app:srcCompat="@drawable/ic_chevron_left" />
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_80"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="Add New Benificiary"
+
+            android:layout_weight="1.0" app:fontFamily="sans-serif-medium" />
+        <ImageButton
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/benificiary_done_imagebtn"
+
+            android:tint="@color/grey_60" app:srcCompat="@drawable/ic_done" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="true" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/spacing_mxlarge" android:paddingTop="@dimen/spacing_medium" android:paddingRight="@dimen/spacing_mxlarge" android:paddingBottom="@dimen/spacing_xxlarge" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Benificiary Photo" />
+            <LinearLayout android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/edit_text_round_bg_outline"
+                android:padding="@dimen/spacing_large"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/benificiary_photo_container"
+                android:layout_marginTop="@dimen/spacing_middle">
+
+                <RelativeLayout android:background="@color/grey_3"
+                    android:layout_width="80.0dip" android:layout_height="80.0dip">
+                    <ImageView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/transparent"
+                        android:id="@+id/benificiary_image_view"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/customer" />
+                </RelativeLayout>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/grey_40"
+                    android:gravity="center"
+                    android:id="@+id/benificiary_image_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Photo" />
+            </LinearLayout>
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="Benificiary Name" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:background="@color/grey_3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:layout_marginTop="@dimen/spacing_middle"
+                app:hintEnabled="false">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textColorHint="@color/grey_20"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:id="@+id/benificiary_name_edittext"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:layout_width="fill_parent" android:layout_height="fill_parent"
+                    android:hint="Enter a Benificiary Name" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge" android:text="Benificiary DOB" />
+            <LinearLayout  android:background="@color/transparent"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:layout_marginTop="@dimen/spacing_middle"
+                android:id="@+id/benificiary_dob_container"
+                app:hintEnabled="false">
+                <TextView
+                    android:textColorHint="@color/grey_20"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/benificiary_dob_textview"
+                    android:hint="E.g. 29 -Apr -1999 " />
+            </LinearLayout>
+
+             <TextView
+                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                 android:textColor="@color/grey_40"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/spacing_mlarge"
+                 android:text="Attach Benificiary Adhar Card" />
+            <LinearLayout android:orientation="horizontal"
+                android:background="@drawable/edit_text_round_bg_outline"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/benificiary_adharcard_container"
+                android:layout_marginTop="@dimen/spacing_middle">
+
+                <ImageView android:padding="@dimen/spacing_xmedium"
+                    android:layout_width="@dimen/spacing_xmlarge"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/ic_insert_drive" />
+                <TextView
+                    android:textColor="@color/grey_60"
+                    android:background="@android:color/transparent"
+                    android:layout_width="0.0dip"
+                    android:id="@+id/benificiary_adharcard_filename_textview"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:text="file_name.JPG" android:editable="false"
+                    android:layout_weight="1.0" />
+                <ImageView android:padding="@dimen/spacing_xmedium"
+                    android:layout_width="@dimen/spacing_xmlarge"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:tint="@color/grey_40"
+                    android:id="@+id/benificiary_adharcard_file_cancel_imageview"
+                    app:srcCompat="@drawable/ic_close" />
+            </LinearLayout>
+              </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/digiration" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/relativelayout"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/newwaves" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="May I ask you phone number?"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <Spinner
+            android:id="@+id/spinnercountries"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edittextphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:digits="0123456789"
+            android:hint="enter your number"
+            android:maxLength="10" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttoncontinue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout"
+        android:layout_centerHorizontal="true"
+        android:background="@color/green"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

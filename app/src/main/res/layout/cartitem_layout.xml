@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="9dp"
+    android:layout_marginBottom="10dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/spacing_middle" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/cartitemproducticon" android:layout_width="90.0dip" android:layout_height="90.0dip" android:scaleType="centerCrop" app:srcCompat="@drawable/ic_launcher_foreground" />
+                <View android:layout_width="@dimen/spacing_middle" android:layout_height="0.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:id="@+id/cartitemproductname" android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/grey_90" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_medium" android:text="Coup Hoodie Jacket" app:fontFamily="sans-serif-medium" />
+                        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                        <TextView android:id="@+id/cartitemproductprice" android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textStyle="bold" android:textColor="@color/light_green_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_small" android:text="$ 89.00" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageButton android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="@dimen/spacing_xlarge" android:tint="@color/grey_40" app:srcCompat="@drawable/ic_add" />
+                        <TextView android:id="@+id/cartitemQuantity" android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textColor="@color/grey_90" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="@dimen/spacing_medium" android:layout_marginBottom="@dimen/spacing_medium" android:text="1" android:layout_weight="1.0" app:fontFamily="sans-serif-medium" />
+                        <ImageButton android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="@dimen/spacing_xlarge" android:tint="@color/grey_40" app:srcCompat="@drawable/ic_remove" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/spacing_mlarge" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
