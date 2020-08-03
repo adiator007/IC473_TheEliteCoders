@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="webApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="webApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="webApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="webApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="app.css">
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script> -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBk7s49NIseRI_UtxZ2e3r66ZJnPVILFfk",
+    authDomain: "crudoperationapp-3b7b0.firebaseapp.com",
+    databaseURL: "https://crudoperationapp-3b7b0.firebaseio.com",
+    projectId: "crudoperationapp-3b7b0",
+    storageBucket: "crudoperationapp-3b7b0.appspot.com",
+    messagingSenderId: "499170055808",
+    appId: "1:499170055808:web:42afbbbac4ccc5315eb865",
+    measurementId: "G-T0VHYDHSD7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SIH Admin</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="Admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="Admin/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+
+<body id="page-top">
+
+  <div ng-view></div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="app.js"></script>
+  <script type="text/javascript" src="home/home.js"></script>
+  <script type="text/javascript" src="register/register.js"></script>
+  <script type="text/javascript" src="distributeridservice.js"></script>
+  <script type="text/javascript" src="welcome/welcome.js"></script>
+  <script type="text/javascript" src="distributerkycdocument/kycdoc.js"></script>
+    <script type="text/javascript" src="consumerkycdocument/kycdoc.js"></script>
+  <script type="text/javascript" src="addPost/addPost.js"></script>
+  <script type="text/javascript" src="Test/test.js"></script>
+  <script type="text/javascript" src="Customer/customers.js"></script>
+  <script type="text/javascript" src="consumers/consumers.js"></script>
+  <script type="text/javascript" src="consumers/approvedconsumer.js"></script>
+  <script type="text/javascript" src="Distributer/approveddistributer.js"></script>
+  <script type="text/javascript" src="Distributer/distributer.js"></script>
+   <script type="text/javascript" src="comment/comment.js"></script>
+  <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  
+
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="Admin/vendor/jquery/jquery.min.js"></script>
+  <script src="Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="Admin/js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="Admin/vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="Admin/js/demo/chart-area-demo.js"></script>
+  <script src="Admin/js/demo/chart-pie-demo.js"></script>
+
+  
+  </body>
+
+
+
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin 2 - Tables</title>
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+      <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">User Comments / Problems</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"></h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  
+                
+                    <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Shop Name</th>
+                      <th>City</th>
+                      <th>Problem/Comment</th>
+                      <th>Date</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+
+                    <!-- <div ng-int="getAllReview()"></div> -->
+
+                    <div  > 
+                        <p>{{review.$id}}</p>
+                    <!-- <div ng-repeate="comment in allcomment"> -->
+                        <!-- <p>test : {{comment.$id}}</p> -->
+                        
+                    <tr ng-repeat="review in allreview">
+                      <td>{{review.customername}}</td>
+                      <td>{{review.shopname}}</td>
+                      <td>{{review.city}}</td>
+                      <td>{{review.review}}</td>
+                        <td>{{review.date}}</td>
+                    </tr>
+                <!-- </div> -->
+                    </div>
+
+
+                    <tr>
+                      <td>Garrett Winters</td>
+                      <td>Latur Ration Shops</td>
+                      <td>Latur</td>
+                      <td>The Distributor of the shop is not behaving properly.</td>
+                      <td>2011/07/25</td>
+                    </tr>
+                    <tr>
+                      <td>Ashton Cox</td>
+                      <td>Pune Ration Shops</td>
+                      <td>Pune</td>
+                      <td>The Distributor of the shop is not behaving properly.</td>
+                      <td>2009/01/12</td>
+                    </tr>
+                    <tr>
+                      <td>Cedric Kelly</td>
+                      <td>Pune Ration Shops</td>
+                      <td>Pune</td>
+                      <td>The Distributor of the shop is not behaving properly.</td>
+                      <td>2012/03/29</td>
+                    </tr>
+                    <tr>
+                      <td>Arati Bhagat</td>
+                      <td>Pune Ration Shops</td>
+                      <td>Pune</td>
+                      <td>The Distributor of the shop is not behaving properly.</td>
+                      <td>2008/11/28</td>
+            
+                    </tr>
+                    <tr>
+                      <td>Pooja Bhagat</td>
+                      <td>Pune Ration Shops</td>
+                      <td>Pune</td>
+                      <td>The Distributor of the shop is not behaving properly.</td>
+                      <td>2012/12/02</td>
+                    </tr>
+                    <tr>
+                      <td>Herrod Chandler</td>
+                      <td>Pune Ration Shops</td>
+                      <td>Pune</td>
+                      <td>The Distributor of the shop is not behaving properly.</td>
+                      <td>2012/08/06</td>
+                    </tr>
+                    <tr>
+                      <td>Rhona Davidson</td>
+                      <td>Latur Ration Shops</td>
+                      <td>Latur</td>
+                      <td>The Distributor of the shop is not behaving properly.</td>
+                      <td>2010/10/14</td>
+                    </tr>
+                    <tr>
+                      <td>Raj Patil</td>
+                      <td>Jalgaon Ration Shops</td>
+                      <td>Jalgaon</td>
+                      <td>The distributor not distributing ration on time. Even keeps shop open only for some time.</td>
+                      <td>2009/09/15</td>
+                    </tr>
+                    <tr>
+                      <td>Sonya Frost</td>
+                      <td>Patil rations</td>
+                      <td>Ahmedpur</td>
+                      <td>The distributor not distributing ration on time. Even keeps shop open only for some time.</td>
+                      <td>2008/12/13</td>
+                    </tr>
+                    <tr>
+                      <td>Jena Gaines</td>
+                      <td>Chakur Ration Shop</td>
+                      <td>Chakur</td>
+                      <td>The distributor not distributing ration on time. Even keeps shop open only for some time.</td>
+                      <td>2008/12/19</td>
+                    </tr>
+                    <tr>
+                      <td>Quinn Flynn</td>
+                      <td>Wagholi Ration Shop</td>
+                      <td>Wagholi</td>
+                      <td>The distributor not distributing ration on time. Even keeps shop open only for some time.</td>
+                      <td>2013/03/03</td>
+                    </tr>
+                    <tr>
+                      <td>Charde Marshall</td>
+                      <td>Patil rations</td>
+                      <td>Wagholi</td>
+                      <td>The distributor not distributing ration on time. Even keeps shop open only for some time.</td>
+                      <td>2008/10/16</td>
+            
+                    </tr>
+                    <tr>
+                      <td>Gloria Little</td>
+                      <td>Chakur Ration Shop</td>
+                      <td>Chakur</td>
+                      <td> The distributor keeps shop open only for some time.</td>
+                      <td>2019/04/10</td>
+                    </tr>
+                    <tr>
+                      <td>Anil Patil</td>
+                      <td>Chakur Ration Shop</td>
+                      <td>Chakur</td>
+                      <td>My Coins are not credited for this month.</td>
+                      <td>2019/10/13</td>
+                
+                    </tr>
+                    <tr>
+                      <td>Akshay Patil</td>
+                      <td>Chakur Ration Shop</td>
+                      <td>Chakur</td>
+                      <td>My Coins are not credited for this month.</td>
+                      <td>2018/09/26</td>
+            
+                    </tr>
+                    <tr>
+                      <td>Jenette Caldwell</td>
+                      <td>Chakur Ration Shop</td>
+                      <td>Chakur</td>
+                      <td>The distributor keeps shop open only for some time.</td>
+                      <td>2017/09/03</td>
+
+                    </tr>
+                    <tr>
+                      <td>Yuvraj Bhagat</td>
+                      <td>Chakur Ration Shop</td>
+                      <td>Chakur</td>
+                      <td>The distributor keeps shop open only for some time.</td>
+                      <td>2019/06/25</td>
+    
+                    </tr>
+                    <tr>
+                      <td>Aniket Jadhav</td>
+                      <td>Chakur Ration Shop</td>
+                      <td>Chakur</td>
+                      <td>The distributor keeps shop open only for some time.</td>
+                      <td>2011/12/12</td>
+                
+                    </tr>
+                    <tr>
+                      <td>Aishwarya Jadhav</td>
+                      <td>Nanded Ration Shop</td>
+                      <td>Nanded</td>
+                      <td>The distributor keeps shop open only for some time.</td>
+                      <td>2010/09/20</td>
+                
+                    </tr>
+                    <tr>
+                      <td>Angelica Sable</td>
+                      <td>Nanded Ration Shop</td>
+                      <td>Nanded</td>
+                      <td>The distributor keeps shop open only for some time.</td>
+                      <td>2009/10/09</td>
+
+                    </tr>
+                    <tr>
+                      <td>Jyoti Patil</td>
+                      <td>Udgir Rations</td>
+                      <td>Udgir</td>
+                      <td>The distributor keeps shop open only for some time.</td>
+                      <td>2010/12/22</td>
+                    </tr>
+                    <tr>
+                      <td>Jenny Arora</td>
+                      <td>Udgir ration shop</td>
+                      <td>Udgir</td>
+                      <td>The distributor keeps shop open only for some time.</td>
+                      <td>2010/11/14</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>Shiv Prem</td>
+                      <td>Udgir ration shop</td>
+                      <td>Udgir</td>
+                      <td>The distributor keeps shop open only for some time.</td>
+                      <td>2011/05/07</td>
+                    </tr>
+                    <tr>
+                      <td>Aditya Sawale</td>
+                      <td>Udgir ration shop</td>
+                      <td>Udgir</td>
+                      <td>The distributor keeps shop open only for some time.</td>
+                      <td>2018/10/26</td>
+                    </tr>
+                    <tr>
+                      <td>Asma Shaikh</td>
+                      <td>Udgir ration shop</td>
+                      <td>Udgir</td>
+                      <td>My Coins are not credited for this month.</td>
+                      <td>2018/03/09</td>
+                    </tr>
+                    <tr>
+                      <td>Sakshi Gaikwas</td>
+                      <td>Nashik rations</td>
+                      <td>Nashik</td>
+                      <td>My Coins are not credited for this month.</td>
+                      <td>2019/12/09</td>
+                    </tr>
+                    <tr>
+                      <td>Suraj Jadhav</td>
+                      <td>Nashik ration shop</td>
+                      <td>Nashik</td>
+                      <td>My Coins are not credited for this month.</td>
+                      <td>2008/12/16</td>
+                    </tr>
+                    <tr>
+                      <td>Suraj Patil</td>
+                      <td>Nashik ration shop</td>
+                      <td>nashik</td>
+                      <td>My Coins are not credited for this month.</td>
+                      <td>2020/02/12</td>
+
+                    </tr>
+                    <tr>
+                      <td>Vishal Sawale</td>
+                      <td>Nashik ration shop</td>
+                      <td>Nashik</td>
+                      <td>My Coins are not credited for this month.</td>
+                      <td>2009/02/14</td>
+                    </tr>
+                    <tr>
+                      <td>Aditi Palmate</td>
+                      <td>Shirur Ration Shop</td>
+                      <td>Shirur</td>
+                      <td>My Coins are not credited for this month.</td>
+                      <td>2008/12/11</td>
+    
+                    </tr>
+                    <tr>
+                      <td>Jyoti Wadkar</td>
+                      <td>Shirur Ration Shop</td>
+                      <td>Shirur</td>
+                      <td>My Coins are not credited for this month.</td>
+                      <td>2008/09/26</td>
+            
+                    </tr>
+                    <tr>
+                      <td>Rushi Bawake</td>
+                      <td>Shirur Ration Shop</td>
+                      <td>Shirur</td>
+                      <td>My Coins are not credited for this month.</td>
+                      <td>2011/02/03</td>
+                    </tr>
+                    <tr>
+                      <td>Gopal Bawake</td>
+                      <td>Shirur Ration Shop</td>
+                      <td>Shirur</td>
+                      <td>My Coins are not credited for this month.</td>
+                      <td>2011/05/03</td>
+                    </tr>
+                  
+                
+                </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
+
+</body>
+
+</html>
